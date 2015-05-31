@@ -44,7 +44,7 @@ FEATURES
       getting your file once it is loaded
          You can call your newly created file by:
          new_file.new_file.created_file 
-         #For your main file.
+         #For your main file. 
          
          new_file.extra_file.created_extra
          #For your child files.
