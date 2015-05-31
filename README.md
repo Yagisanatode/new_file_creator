@@ -30,9 +30,9 @@ FEATURES::
    getting your file once it is loaded::
 EXAMPLE 1: Single File Save::
    import new_file
-   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#alls34','JSON/', 'json')
+   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
 
 EXAMPLE 2: File and Child Files You Want Saved With the Same File Name::
    import_new_file
-   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#alls34','JSON/', 'json')
+   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
    duck = new_file.extra_file('none.png','Image/','png')
