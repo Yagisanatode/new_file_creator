@@ -87,7 +87,7 @@ class extra_file():
         self.make_file()
     def make_file(self):
         shutil.copy2(self.file_to_copy,self.path_and_file)
-        
+        extra_file.created_extra = self.path_and_file
     
 
 
