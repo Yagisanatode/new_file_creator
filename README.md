@@ -50,7 +50,7 @@ FEATURES
          #For your child files.
       
    
-EXAMPLE 1: Single File Save
+EXAMPLE 1- Single File Save
          import new_file
          chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
          
@@ -72,7 +72,7 @@ EXAMPLE 1: Single File Save
             *Creates the file
             *Saves a copy of the file name for your use if needed. 
 
-EXAMPLE 2: File and Child Files You Want Saved With the Same File Name
+EXAMPLE 2- File and Child Files You Want Saved With the Same File Name
          import_new_file
          chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
          duck = new_file.extra_file('none.png','Image/','png')
