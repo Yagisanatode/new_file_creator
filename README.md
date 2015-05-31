@@ -43,12 +43,36 @@ FEATURES
       
    getting your file once it is loaded
       You can call your newly created file by:
+      new_file.new_file.created_file 
+      #For your main file.
+      
+      new_file.extra_file.created_extra
+      #For your child files.
+      
    
 EXAMPLE 1: Single File Save
-   import new_file
-   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
+      import new_file
+      chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
+      
+      PROCESS
+      *CLEAN THE FILE NAME - if the user creates the file and goes to town on symbols and spaces this will 
+      clean it up.
+         *Get's rid of whitespace and joins it with and underscore
+         *matches any alphanumeric character and the underscore only and joins it back into one string. 
+         *Cut filename length to 150 characters if it is over.
+         In our example 'Jeeves #Smelly B^%#um34' will be transformed to 'Jeeves_Smelly_Bum34'
+      *CHECKS THE IF FILE EXISTS - checks if file already exists in new directory. 
+         *Searches for file. 
+         *If it exists it creates a copy of the file. For example 'Jeeves_Smelly_Bum34' will become
+         'Jeeves_Smelly_Bum34(1)'
+         *If a copy exists it will loop through until the numbers run out and creates the next file number.
+         For example if 'Jeeves_Smelly_Bum34(1)' 'Jeeves_Smelly_Bum34(2)' 'Jeeves_Smelly_Bum34(3)' files exists
+         in your directory then your file will be saved as 'Jeeves_Smelly_Bum34(1)'
+         *Concatenates the directory(if present), new file name and file extension.
+         *Creates the file
+         *Saves a copy of the file name for your use if needed. 
 
 EXAMPLE 2: File and Child Files You Want Saved With the Same File Name
-   import_new_file
-   chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
-   duck = new_file.extra_file('none.png','Image/','png')
+      import_new_file
+      chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
+      duck = new_file.extra_file('none.png','Image/','png')
