@@ -7,8 +7,8 @@ Python 3 module for creating new files where you need a little more control over
 .. module:: New File
    :synopsis: Sometimes you want a little more control over your source file and where you want to save it
               rather than use something like tkFileDialog where the user has the choice over the location. 
-             The new_file modlue allows you to direct to the location of the template file, choose the file 
-             name and select the directory it is in. It also allows you to quickly save child fils with the 
+             The new_file module allows you to direct to the location of the template file, choose the file 
+             name and select the directory it is in. It also allows you to quickly save child fills with the 
              same file name. 
 .. moduleauthor:: Scott Donald
 
@@ -22,7 +22,7 @@ FEATURES
                         'c:/Users/Batman/Documents/tmp/txt'
          *new_file_name -The name you want to give your new file. e.g. 'Harry Botter'
          *new_file_path -The directory you want your file in. If you are putting your file in the same location
-                        as your program, leave it blank (e.g. ''). If it is in a child directory jsut add the file 
+                        as your program, leave it blank (e.g. ''). If it is in a child directory just add the file 
                         location (e.g. 'JSON/' or 'Images/'). If your folder location lies outside your program you
                         will need to use the full path (e.g. 'c:/Users/Batman/Documents/tmp/txt') 
          *file_type - The file extension of your file (e.g. 'jpg', 'txt','json','wav').
