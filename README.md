@@ -14,11 +14,19 @@ Python 3 module for creating new files where you need a little more control over
 
 FEATURES::
    new_file objec::
-      new_file(self, file_to_copy, new_file_name, new_file_path, file_type)
-      
+      new_file(file_to_copy, new_file_name, new_file_path, file_type)
+      *file_to_copy: The template file you want to copy. e.g. 'tmp.txt' if it is in the same file path or 
+                     'c:/Users/Batman/Documents/tmp/txt'
+      *new_file_name:
+      *new_file_path:
+      *file_type:
       
    extra_file object::
-      extra_file((self, file_to_copy, directory, file_type))
+      extra_file((file_to_copy, directory, file_type))
+      *file_to_copy:
+      *directory:
+      *file_type:
+      
    getting your file once it is loaded::
 EXAMPLE 1: Single File Save::
    import new_file
