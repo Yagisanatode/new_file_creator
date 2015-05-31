@@ -33,11 +33,11 @@ FEATURES
          extra_file((file_to_copy, directory, file_type))
          
          *file_to_copy - The template file you want to copy. e.g. 'tmp.txt' if it is in the same file path or 
-                        'c:/Users/Batman/Documents/tmp/txt'
+                        'c:/Users/Batman/Documents/tmp.txt'
          *directory - The directory you want your file in. If you are putting your file in the same location
                         as your program, leave it blank (e.g. ''). If it is in a child directory jsut add the file 
                         location (e.g. 'JSON/' or 'Images/'). If your folder location lies outside your program you
-                        will need to use the full path (e.g. 'c:/Users/Batman/Documents/tmp/txt')
+                        will need to use the full path (e.g. 'c:/Users/Batman/Documents/tmp.txt')
          *file_type - The file extension of your file (e.g. 'jpg', 'txt','json','wav').
          NOTE - This file uses the directory name from the new_file object.
          
@@ -78,3 +78,28 @@ EXAMPLE 2- File and Child Files You Want Saved With the Same File Name
          import_new_file
          chicken = new_file.new_file('blank.json','Jeeves #Smelly B^%#um34','JSON/', 'json')
          duck = new_file.extra_file('none.png','Image/','png')
+         turkey = new_file.extra_file('Images/gobblegobble.jpg','','jpg')
+         emu = new_file.extra_file(''c:/Users/Batman/Documents/tmp.txt'','text/','txt')
+         
+         PROCESS
+         *RUNS THROUGH STEPS IN FIRST EXAMPLE - as you can the 'chicken' instance runs through the 
+         new_file object. This is essentially the parent file. 
+         * For 'duck','turkey' and 'emu' instances use the extra_file object and do the same thing as 
+         each other.
+         *GRABS NEW FILE NAME - Gets a copy of the new file name from the new_file object
+         *IF IN DIRECTORY - Checks if file created in the new_file class is in a directory and removes 
+         the directory if needed.
+         *NEW DIRECTORY AND FILE - Concatenates the directory(if present), new file name and file extension
+         
+POSSIBLE USES
+         REGISTER USER
+         You could use the new_file module to save username data in a database file, save their avatar with the 
+         same name. 
+         
+         GAME SAVE
+         You need some control over the location of where the file needs to be saved here. You can use the users 
+         nickname as the name of the file and name any child files like avatar details file, game save location file, 
+         inventory file etc all with the same name.
+         
+P.S. I'm a noop hobbiest programmer. I created this module to help me with my first program. If you have any suggestions
+for improvement I would appreciate any guidance. ~Scott
